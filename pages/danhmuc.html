@@ -9,13 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/response.css">
+    <link rel="stylesheet" href="/css/product.css">
 </head>
 <body>
     <header id="header">
-        <div class="container header-container" style="width: 87%;">
+        <div class="container header-container" style="width: 87%">
             <nav class="main-menu">
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul class="menu">
+                    <div class="close-menu">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
                     <li>
                         <a href="">Nữ</a>
                         <ul class="sub-menu">
@@ -222,7 +231,7 @@
             </nav>
             <div class="site-brand">
                 <a href="">
-                    <img src="../img/logo.png" alt="">
+                    <img src="/img/logo.png" alt="">
                 </a>
             </div>
             <div class="right-header">
@@ -295,25 +304,549 @@
                     <i class="bi bi-person"></i>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item item-cart">
                     <a href="" class="icon">
                         <i class="bi bi-bag"></i>
                         <span>0</span>
                     </a>
+                    <div class="sub-action sub-action-cart">
+                        <div class="top-action">
+                            <h3>Giỏ hàng</h3>
+                            <span class="number-cart">1</span>
+
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="main-action">
+                            <div class="item-product-cart d-flex">
+                                <div class="thumb-product-cart">
+                                    <img src="/img/mau1.1.jpg" alt="">
+                                </div>
+                                <div class="info-product-cart">
+                                    <h3>
+                                        <a href="">Đầm cổ xếp in hoa</a>
+                                    </h3>
+                                    <div class="info-price-mini d-flex">
+                                        <div class="info-price-quantity d-flex">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                        <div class="price-cart-mini">
+                                            <ins><span>1.432.000đ</span></ins>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-action">
+                            <div class="total-price">
+                                Tổng cộng: <strong>1.432.000đ</strong>
+                            </div>
+                            <div class="box-action">
+                                <a href="/thanhtoan.html" class="action-view-cart">Xem giỏ hàng</a>
+                                <a href="pages/login.html" class="action-login">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="site-main" id="main" style="height: 100vh;">
+    <main class="site-main" id="main">
         <div id="product" class="row">
             <div class="container">
-                <div class="breadcrumb-products">
-                    <ol class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href=""><i class="bi bi-dash"></i> NEW ARRIVAL</a></li>
-                    </ol>
-                </div>
-                <section class="section-list-products"></section>
+                <section class="section-list-products">
+                    <div class="box-products d-flex">
+                        <div class="sidebar-prod">
+                            <div class="filter-by-side">
+                                <ul class="list-side">
+                                    <li class = "item-side item-side-size">
+                                        <p class="item-side-title-firts">
+                                            Danh mục sản phẩm
+                                        </p>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Áo
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Áo khoác
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Chân váy
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Đầm
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Serona(đầm dạ hội)
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Set bộ
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Quần
+                                        </a>
+                                    </li>
+                                    <li class = "item-side item-side-size">
+                                        <a class="item-side-title">
+                                            Phụ kiện
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-prod">
+                            <div class="top-main-prod">
+                                <h1 class="sub-title-main">Best Seller</h1>
+                                <div class="filter-prod">
+                                    <div class="item-filter">
+                                        <span>Sắp xếp theo <i class="fa-solid fa-chevron-down"></i></span>
+                                        <div class="list-number-row">
+                                            <div class="item-number-row"><a href="javascript:void(0)" class="sel-order-option" data-value = "">Mặc định</a></div>
+                                            <div class="item-number-row"><a href="javascript:void(0)" class="sel-order-option" data-value = "price_desc">Giá: cao đến thấp</a></div>
+                                            <div class="item-number-row"><a href="javascript:void(0)" class="sel-order-option" data-value = "price_asc">Giá: thấp đến cao</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-main-prod">
+                                <div class="list-products list-products-cat d-flex">
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-cat-product">
+                                        <div class="product">
+                                            <div class="info-ticket seller">Best Seller</div>
+                                            <div class="badget badget_02">
+                                                -60
+                                                <span>%</span>
+                                            </div>
+                                            <div class="thumb-product">
+                                                <a href=""><img src="/img/mau2.1.jpg" alt=""></a>
+                                                <a href=""><img src="/img/mau2.2.jpg" alt="" class="hover-img"></a>
+                                            </div>
+                                            <div class="info-product">
+                                                <div class="list-color">
+                                                    <div class="favourite">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-product">
+                                                    <a href="">Áo Sơ Mi Cổ Tay Đức Liền</a>
+                                                </h3>
+                                                <div class="price-product">
+                                                    <ins><span>850.000đ</span></ins>
+                                                    <del>
+                                                        <span>1.000.000đ</span>
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <a href="">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline-pagination">
+                                    <li><a href=""><<</a></li>
+                                    <li class="product_active_ts">
+                                        <a href="?pages=1">1</a>
+                                    </li>
+                                    <li><a href="danhmuc.html?pages=2">2</a></li>
+                                    <li><a href="danhmuc.html?pages=3">3</a></li>
+                                    <li><a href="">>></a></li>
+                                    <li class="last-page">
+                                        <a href="">Trang cuối</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -438,5 +971,42 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/script.js"></script>
+    <script>
+        /// Filter
+
+        var itemFilter = document.querySelector('.item-filter');
+        var list_filter =document.querySelector('.list-number-row');
+        var iconDown = document.querySelector('.item-filter .fa-solid');
+        itemFilter.addEventListener('click',function(){
+            list_filter.classList.toggle('open');
+            iconDown.classList.toggle('fa-chevron-down');
+            iconDown.classList.toggle('fa-chevron-up');
+        })
+
+
+
+        /// Pagination
+        const paginationLinks = document.querySelectorAll(".list-inline-pagination li a");
+
+        paginationLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Remove 'product_active_ts' class from all li elements
+                document.querySelectorAll('.list-inline-pagination li').forEach(li => {
+                    li.classList.remove('product_active_ts');
+                });
+
+                // Add 'product_active_ts' class to the parent li of the clicked link
+                this.parentElement.classList.add('product_active_ts');
+
+                // Change the URL without reloading the page
+                const href = this.getAttribute('href');
+                if (href && href !== '') {
+                    history.pushState(null, '', href);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
