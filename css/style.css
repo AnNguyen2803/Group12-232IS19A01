@@ -93,7 +93,9 @@ input{
 }
 .site-brand a,
 .site-brand a img{
-    width: 100%;
+    width: 90%;
+    height: 80px;
+    object-fit: cover;
 }
 .header-actions{
     display: flex;

@@ -184,4 +184,28 @@ x_cart.onclick = function() {
     sub_cart.classList.remove('open');
     document.querySelector('.main-menu').style.zIndex = "2";
 }
+// Đổi màu yêu thích
 
+var favourite = document.querySelectorAll('.list-color .favourite');
+
+
+favourite.forEach(f => {
+    f.onclick = () => {
+        var heartIcon = f.querySelector('.bi');
+        heartIcon.classList.toggle('bi-heart');
+        heartIcon.classList.toggle('bi-heart-fill');
+        if (heartIcon.classList.contains('bi-heart-fill')) {
+            heartIcon.style.color = "red";
+            alert('Thêm sản phẩm yêu thích thành công!');
+        } else {
+            heartIcon.style.color = "black";
+            alert('Đã xóa sản phẩm khỏi yêu thích!');
+        }
+    }
+})
+
+console.log(favourite);
+favourite.onclick = function(){
+    alert('hello');
+    
+}
