@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="style.css">
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
 </head>
 <body>
     <header id="header">
-        <div class="container" style="width: 87%">
+        <div class="container header-container" style="width: 87%">
             <nav class="main-menu">
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul class="menu">
+                    <div class="close-menu">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
                     <li>
                         <a href="">Nữ</a>
                         <ul class="sub-menu">
@@ -294,11 +302,48 @@
                     <i class="bi bi-person"></i>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item item-cart">
                     <a href="" class="icon">
                         <i class="bi bi-bag"></i>
                         <span>0</span>
                     </a>
+                    <div class="sub-action sub-action-cart">
+                        <div class="top-action">
+                            <h3>Giỏ hàng</h3>
+                            <span class="number-cart">1</span>
+
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="main-action">
+                            <div class="item-product-cart d-flex">
+                                <div class="thumb-product-cart">
+                                    <img src="img/mau1.1.jpg" alt="">
+                                </div>
+                                <div class="info-product-cart">
+                                    <h3>
+                                        <a href="">Đầm cổ xếp in hoa</a>
+                                    </h3>
+                                    <div class="info-price-mini d-flex">
+                                        <div class="info-price-quantity d-flex">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                        <div class="price-cart-mini">
+                                            <ins><span>1.432.000đ</span></ins>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-action">
+                            <div class="total-price">
+                                Tổng cộng: <strong>1.432.000đ</strong>
+                            </div>
+                            <div class="box-action">
+                                <a href="/thanhtoan.html" class="action-view-cart">Xem giỏ hàng</a>
+                                <a href="pages/login.html" class="action-login">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

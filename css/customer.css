@@ -1,0 +1,109 @@
+.auth {
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+.auth_login, .auth_register {
+    flex: 0 0 480px;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.auth-container {
+    min-width: 1170px;
+    width: 100%;
+    padding: 0 16px;
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto;
+}
+.auth-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    position: relative;
+}
+.auth-row:before {
+    position: absolute;
+    content: "";
+    height: 300px;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    background-color: #e7e8e9;
+}
+
+.auth__login, .auth__register {
+    flex: 0 0 480px;
+    max-width: 100%;
+    padding: 0 15px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.auth_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: #221f20;
+    text-align: center;
+}
+.auth_description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #6c6d70;
+    text-align: center;
+}
+.auth_title + .auth_login_content {
+    margin-top: 10px;
+}
+.auth_form {
+    margin-top: 24px;
+    /* width: 390px; */
+    max-width: 100%;
+}
+.auth_form .form-group + .form-group {
+    margin-top: 24px;
+}
+.form-control {
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E7E8E9;
+    font-size: 14px;
+    color: #57585A;
+    font-family: 'Montserrat', sans-serif;
+}
+.auth_login_content .form-checkbox label {
+    display: flex;
+    min-height: 20px;
+}
+.btn--large:hover, .my-account-wrapper .col-input .input-append:hover, .cart__product-item__btn--save .btn:hover, .cart__product-item__btn--out-of-stock .btn:hover {
+    background-color: #f7f8f9;
+    color: #221f20;
+    border-color: #221f20;
+}
+.btn--large {
+    padding: 12px 24px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #221f20;
+    color: #f7f8f9;
+    border: 1px solid transparent;
+    width: 100%;
+    cursor: pointer;
+}
+.auth_form_options{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-none{
+    display: none;
+}

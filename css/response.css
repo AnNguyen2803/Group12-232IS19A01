@@ -1,0 +1,168 @@
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    /* Menu responsive */
+    .container .main-menu .menu{
+        display: none;
+        background-color: #fff;
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        left: -50px;
+    }
+    .main-menu .menu li{
+        pointer-events: none;
+        display: block;
+        padding-left: 22px;
+    }
+    .main-menu .menu li a{
+        font-size: 18px;
+    }
+    .main-menu .menu li:nth-child(2){
+        margin-top: 100px;
+    }
+    .main-menu .close-menu{
+        display: block;
+        position: fixed;
+        left: 20px;
+        top: 20px;
+    }
+    .main-menu .close-menu i{
+        padding: 5px;
+    }
+    .main-menu .mobile-menu{
+        display: block;
+    }
+    .right-header{
+        display: none;
+    }
+    .header-actions .item:not(:last-child){
+        display: none;
+    }
+    .header-actions{
+        width: 30px;
+    }
+    .container .nav-info{
+        display: none;
+    }
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .item-promote{
+        width: 50%;
+    }
+    .header-actions .sub-action-cart.open{
+        right: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+    body{
+        overflow-x: hidden;
+    }
+    .container .main-menu .menu{
+        display: none;
+        background-color: #fff;
+        position: relative;
+        top: 160px;
+        width: 100vw;
+        left: 20px;
+    }
+    .header-container{
+        width: 100% !important;
+    }
+    .right-header{
+        display: none;
+    }
+    .container .nav-info{
+        display: none;
+    }
+    .item-cart{
+        display: block;
+        z-index: 1;
+    }
+    .container {
+        justify-content: center;
+    }
+    .main-menu .mobile-menu{
+        display: block;
+        position: relative;
+        left: -35px;
+    }
+    .main-menu{
+        z-index: 2;
+    }
+    .header-actions .item:not(:last-child){
+        display: none;
+    }
+    .header-actions .item-cart{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .site-brand img{
+        margin-left: 45px;
+    }
+    .main-menu .close-menu{
+        display: block;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .main-menu .menu li{
+        padding: 20px;
+    }
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .header-actions .sub-action-cart.open{
+        right: 0;
+        left: 0;
+        width: 100vw;
+    }
+    .list-promote .item-promote{
+        width: 50%;
+    }
+    .title-section{
+        font-size: 24px;
+    }
+    .slider{
+        padding-top: 20px;
+    }
+    .exclusive-tab{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .list-color{
+        padding: 0 5px;
+    }
+    .add-to-cart a {
+        right: 12px;
+    }
+    .main-footer.d-flex{
+        flex-direction: column-reverse;
+    }
+    .main-footer .left-footer{
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-footer .center-footer{
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-footer .right-footer{
+        width: 100%;
+        max-width: 100%;
+    }
+    .info-right-ft ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
