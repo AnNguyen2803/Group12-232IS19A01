@@ -308,7 +308,7 @@
                             </div>
                             <div class="box-action">
                                 <a href="../pages/giohang.html" class="action-view-cart">Xem giỏ hàng</a>
-                                <a href="..pages/login.html" class="action-login">Đăng nhập</a>
+                                <a href="../pages/login.html" class="action-login">Đăng nhập</a>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                                 <p class="viewed-products--title">Sản phẩm tương tự</p>
                                 <div class="exclusive-content">
                                     <div class="exclusive-inner active" id="tab-women">
-                                        <div class="owl-carousel owl-drag owl-loaded product-carousel" id="related-products"></div>
+                                        <div class="related-carousel owl-carousel owl-drag owl-loaded" id="related-products"></div>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@
         </div>
     </main>
 
-    <div class="site-bottom">
+    <div class="site-bottom pt250">
         <div class="container">
             <div class="main-footer d-flex">
                 <div class="left-footer">
@@ -535,6 +535,7 @@
     <!-- <script src="/script.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/data.js"></script>
+    <script src="../script.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const productId = parseInt(urlParams.get('id'));
@@ -633,7 +634,7 @@
     }
 
     initializeSwipers();
-        $('.owl-carousel').owlCarousel({
+        $('.related-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: false,
