@@ -203,9 +203,3 @@ favourite.forEach(f => {
         }
     }
 })
-
-console.log(favourite);
-favourite.onclick = function(){
-    alert('hello');
-    
-}

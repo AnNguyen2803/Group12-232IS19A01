@@ -221,6 +221,79 @@ dl, ol, ul {
     justify-content: space-between;
     align-items: center;
 }
+.checkout-process-bar ul li.active:after {
+    content: "";
+    width: 2000px;
+    background-color: #221f20;
+    height: 4px;
+    top: 10px;
+    position: absolute;
+    right: 48px;
+}
+.checkout-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221f20;
+    margin-bottom: 18px;
+}
+.address-delivery{
+    margin-top: 32px;
+}
+.ds__item {
+    cursor: unset;
+    margin-top: 32px;
+}
+.ds__item__label{
+    color: #221f20;
+    font-weight: 600;
+}
+.ds__item__contact-info{
+    display: block;
+    margin-top: 10px;
+}
+.form-control {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e7e8e9;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 16px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+.form-group {
+    margin-bottom: 24px;
+}
+.block-border {
+    padding: 32px 26px;
+    position: relative;
+}
+.checkout-payment-option div{
+    padding-top: 10px;
+}
+.thank-you__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.pd-40{
+    padding-top: 40px;
+}
+.thank-you{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.thank-icon{
+    margin: auto;
+    text-align: center;
+}
+.thank-you h2,
+.thank-you p{
+    text-align: center;
+}
 @media (min-width: 1024px) {
     .checkout-process-bar:before {
         content: "";

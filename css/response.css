@@ -58,7 +58,27 @@
         left: 0;
         width: 100vw;
     }
-
+    .viewed-products{
+        display: none;
+    }
+    .product-detail .col-md-6{
+        width: 100%;
+    }
+    .container {
+        padding-bottom: 20px;
+        justify-content: baseline !important;
+    }
+    .left-footer {
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .center-footer{
+        max-width: 100%;
+    }
+    .right-footer{
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 0px) and (max-width: 767px){
@@ -186,12 +206,74 @@
         flex-direction: column-reverse;
         align-items: flex-start;
     }
+    .viewed-products{
+        display: none;
+    }
+    .row{
+        width: 400px;
+    }
+    .product-detail__actions{
+        justify-content: space-between;
+    }
+    .site-bottom .container{
+        padding-top: 50px;
+    }
+    .product-detail__information h1{
+        font-size: 25px !important;
+    }
+    .product-detail__sub-info{
+        display: block !important;
+    }
+    .product-detail__rating {
+        width: 100% !important;
+    }
 }
-@media (min-width: 820px) and (max-width: 1180px){
+@media (min-width: 820px) and (max-width: 1200px){
     .sidebar-prod {
         max-width: 130px !important;
     }
     .list-products-cat .item-cat-product{
         width: calc(100%/3) !important;
+    }
+    .auth-row{
+        flex-direction: column-reverse;
+    }
+    .auth-row:before {
+        position: absolute;
+        content: "";
+        height: 300px;
+        width: 0px;
+        left: 50%;
+        top: 0;
+        background-color: #e7e8e9;
+    }
+    .auth-container{
+        min-width: 0;
+    }
+    .left-footer {
+        max-width: 50%;
+        width: 50%;
+    }
+    .right-footer{
+        max-width: 100%;
+        width: 100%;
+    }
+    #modal{
+        width: 700px;
+    }
+    .viewed-products{
+        display: none;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        /* width: 50%; */
+    }   
+
+}
+
+@media (min-width: 1200px) {
+    .site-brand{
+        margin-left: 120px;
     }
 }
