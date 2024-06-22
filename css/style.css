@@ -545,7 +545,7 @@ input{
     border-color: #000;
 }
 .ticket-news {
-    background: url("/img/bg_news.png") no-repeat center / cover;
+    background: url("../img/bg_news.png") no-repeat center / cover;
     padding: 7px 18px 7px 15px;
     text-transform: uppercase;
 }
@@ -586,10 +586,10 @@ input{
     display: block;
 }
 .badget.badget-03{
-    background: url("/img/badget-03.png") no-repeat center / cover;
+    background: url("../img/badget-03.png") no-repeat center / cover;
 }
 .badget.badget-02{
-    background: url("/img/badget-02.png") no-repeat center / cover;
+    background: url("../img/badget-02.png") no-repeat center / cover;
 }
 .badget{
     z-index: 1;
