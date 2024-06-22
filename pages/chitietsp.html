@@ -646,12 +646,24 @@
                     items: 3
                 },
                 1000: {
+                    items: 4
+                },
+                1300: {
                     items: 5
                 }
             }
         });
     });
+    window.addEventListener('resize', function() {
+        var carouselItems = document.querySelectorAll('.carousel-item');
+        var containerWidth = document.querySelector('.carousel-container').offsetWidth;
+        carouselItems.forEach(function(item) {
+            item.style.width = containerWidth + 'px';
+        });
+    });
 
+// Gọi hàm resize một lần để thiết lập kích thước ban đầu
+window.dispatchEvent(new Event('resize'));
     document.querySelectorAll('.main-slider img').forEach((img) => {
         img.addEventListener('mousemove', (e) => {
         const rect = img.getBoundingClientRect();

@@ -310,6 +310,9 @@
     .auth-container{
         min-width: 0;
     }
+    .owl-item{
+        width: 250px !important;
+    }
 }
 @media (min-width: 820px) and (max-width: 1200px){
     .sidebar-prod {
@@ -354,6 +357,9 @@
     }
     .btn-modal {
         left: 37.5% ;
+    }
+    .right-header{
+        left: 20px;
     }   
 
 }
@@ -361,5 +367,17 @@
 @media (min-width: 1200px) {
     .site-brand{
         margin-left: 120px;
+    }
+}
+@media (max-width: 1300px) and (min-width: 1200px) {
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .carousel-item {
+        width: 100%;
+    }
+    .container{
+        padding-bottom: 10px;
     }
 }

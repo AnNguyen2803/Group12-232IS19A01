@@ -363,3 +363,7 @@ ol, ul {
     margin-bottom: 40px;
     margin-top: 25px;
 }
+.viewed-products{
+    max-width: 90vw;
+    overflow: hidden;
+}

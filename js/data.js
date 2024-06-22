@@ -149,7 +149,7 @@ const san_pham = [
         "loai_san_pham": "ÁO KHOÁC",
         "anh_1": "../images/ka1.webp",
         "anh_2": "../images/ka2.webp",
-        "anh_3": "images/ka3.webp",
+        "anh_3": "../images/ka3.webp",
         "gia": 950000
     },
     {
