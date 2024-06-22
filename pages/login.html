@@ -456,6 +456,22 @@ Bằng cách cung cấp cho Kslay thông tin chi tiết của bạn, quá trình
             var password = document.getElementById('password').value;
             var confirmPassword = document.getElementById('confirmPassword').value;
 
+            // Kiểm tra các trường không được trống và không có khoảng cách
+            if (!name || name.indexOf(' ') !== -1) {
+                alert('Tên không được để trống và không được có khoảng cách.');
+                return;
+            }
+
+            if (!emailPhone || emailPhone.indexOf(' ') !== -1) {
+                alert('Email hoặc Số điện thoại không được để trống và không được có khoảng cách.');
+                return;
+            }
+
+            if (!password || password.indexOf(' ') !== -1) {
+                alert('Mật khẩu không được để trống và không được có khoảng cách.');
+                return;
+            }
+
             // Kiểm tra mật khẩu và xác nhận mật khẩu
             if (password === confirmPassword) {
                 // Lưu thông tin vào localStorage
