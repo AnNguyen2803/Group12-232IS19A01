@@ -5,7 +5,7 @@
         display: none;
         background-color: #fff;
         position: relative;
-        top: 150px;
+        top: 80px;
         width: 100vw;
         left: -50px;
     }
@@ -89,7 +89,7 @@
         display: none;
         background-color: #fff;
         position: relative;
-        top: 160px;
+        top: 100px;
         width: 100vw;
         left: 20px;
     }
