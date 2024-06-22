@@ -586,10 +586,10 @@ input{
     display: block;
 }
 .badget.badget-03{
-    background: url("/img/badget-03.png") no-repeat center / cover;
+    background: url("../img/badget-03.png") no-repeat center / cover;
 }
 .badget.badget-02{
-    background: url("/img/badget-02.png") no-repeat center / cover;
+    background: url("../img/badget-02.png") no-repeat center / cover;
 }
 .badget{
     z-index: 1;
